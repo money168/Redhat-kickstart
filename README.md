@@ -1,1 +1,1 @@
-# centos7 install ks.cfg
+# Centos7 create Kickstart Unattended Installation ISO
