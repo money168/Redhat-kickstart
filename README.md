@@ -1,7 +1,7 @@
 # Create Kickstart Unattended Installation Redhat Linux / Rocky Linux ISO
 
 
-wget https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.2-x86_64-dvd.iso
+wget https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.1-x86_64-dvd.iso
 
 mount /dev/sr0 /mnt
 
