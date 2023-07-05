@@ -17,18 +17,18 @@ vim /tmp/ks.cfg
 
 vim /tmp/rocky9/isolinux/isolinux.cfg  
 
-label kickstart
-  menu label ^Kicskstart Install Rocky Linux 9.1
-  kernel vmlinuz
-  append initrd=initrd.img inst.stage2=hd:LABEL=Rocky-9-1-x86_64-dvd quiet inst.ks=cdrom:/ks.cfg
+label kickstart  
+  menu label ^Kicskstart Install Rocky Linux 9.1  
+  kernel vmlinuz  
+  append initrd=initrd.img inst.stage2=hd:LABEL=Rocky-9-1-x86_64-dvd quiet inst.ks=cdrom:/ks.cfg  
 
 
 vim /tmp/rocky9/EFI/BOOT/grub.cfg  
 
-menuentry 'Kickstart Install Rocky Linux 9.1' --class fedora --class gnu-linux --class gnu --class os {
-        linuxefi /images/pxeboot/vmlinuz inst.stage2=hd:LABEL=Rocky-9-1-x86_64-dvd quiet inst.ks=cdrom:/ks.cfg
-        initrdefi /images/pxeboot/initrd.img
-}
+menuentry 'Kickstart Install Rocky Linux 9.1' --class fedora --class gnu-linux --class gnu --class os {  
+        linuxefi /images/pxeboot/vmlinuz inst.stage2=hd:LABEL=Rocky-9-1-x86_64-dvd quiet inst.ks=cdrom:/ks.cfg  
+        initrdefi /images/pxeboot/initrd.img  
+}  
 
 mkisofs -o /tmp/rocky9m.iso -b isolinux/isolinux.bin -J -R -l -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e images/efiboot.img -no-emul-boot -graft-points -joliet-long -V "Rocky-9-1-x86_64-dvd" .
 
