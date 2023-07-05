@@ -37,8 +37,11 @@ dnf provides implantisomd5
 
 dnf install syslinux isomd5sum xorriso
 
-How to create a modified Red Hat Enterprise Linux ISO with kickstart file or modified installation media?
+How to create a modified Red Hat Enterprise Linux ISO with kickstart file or modified installation media?  
 https://access.redhat.com/solutions/60959
 
-Kickstart Generator
+Kickstart Generator  
 https://access.redhat.com/labs/kickstartconfig/
+
+RHEL/CentOS 8 Kickstart example | Kickstart Generator  
+https://www.golinuxcloud.com/rhel-centos-8-kickstart-example-generator/#Kickstart_command_-_url
