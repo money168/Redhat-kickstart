@@ -36,7 +36,7 @@ isohybrid --uefi /tmp/rocky9m.iso
 
 implantisomd5 /tmp/rocky9m.iso
 
-dnf provides implantisomd5
+dnf provides syslinux isomd5sum xorriso
 
 dnf install syslinux isomd5sum xorriso
 
