@@ -1,1 +1,1 @@
-# Create Kickstart Unattended Installation Centos7 ISO
+# Create Kickstart Unattended Installation Redhat Linux / Rocky Linux ISO
